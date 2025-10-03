@@ -1,0 +1,118 @@
+[gd_scene load_steps=13 format=3 uid="uid://doucbcypiia84"]
+
+[ext_resource type="Texture2D" uid="uid://dsaodyx40rby2" path="res://assets/cercey/cercey-walk.png" id="1_ajm1g"]
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_keeya"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_hy8lg"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(0, 32, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_ajm1g"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(0, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_k7xo7"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(32, 0, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_va6wk"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(0, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rquol"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(32, 64, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_rjci4"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(0, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_dygk7"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(32, 96, 32, 32)
+
+[sub_resource type="AtlasTexture" id="AtlasTexture_gybp4"]
+atlas = ExtResource("1_ajm1g")
+region = Rect2(32, 32, 32, 32)
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_rjci4"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_keeya")
+}],
+"loop": true,
+"name": &"idle_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy8lg")
+}],
+"loop": true,
+"name": &"idle_up",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_ajm1g")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_k7xo7")
+}],
+"loop": true,
+"name": &"walk_down",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_va6wk")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rquol")
+}],
+"loop": true,
+"name": &"walk_left",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_rjci4")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_dygk7")
+}],
+"loop": true,
+"name": &"walk_right",
+"speed": 5.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_hy8lg")
+}, {
+"duration": 1.0,
+"texture": SubResource("AtlasTexture_gybp4")
+}],
+"loop": true,
+"name": &"walk_up",
+"speed": 5.0
+}]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_ajm1g"]
+size = Vector2(9, 7.75)
+
+[node name="Cercey" type="CharacterBody2D"]
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+sprite_frames = SubResource("SpriteFrames_rjci4")
+animation = &"idle_up"
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+position = Vector2(-0.5, 11.125)
+shape = SubResource("RectangleShape2D_ajm1g")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(5.5, 5.5)
