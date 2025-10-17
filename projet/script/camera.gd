@@ -54,7 +54,7 @@ func next_dialog() -> void:
 
 
 func display_dialog(name_text: String, message: String, duration: float) -> void:
-	zoom = Vector2(3, 3)
+	#zoom = Vector2(3, 3)
 	#vignetteIn.hide()
 	dialogName.text = name_text
 	dialogText.text = message
@@ -81,5 +81,5 @@ func display_dialog(name_text: String, message: String, duration: float) -> void
 	dialogBox.visible = false
 	dialogName.visible = false
 	dialogText.visible = false
-	zoom = Vector2(5, 5)
+	#zoom = Vector2(5, 5)
 	#vignetteIn.show()s
