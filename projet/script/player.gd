@@ -1,8 +1,12 @@
 extends CharacterBody2D
 
 @onready var animation: AnimatedSprite2D = $AnimatedSprite2D
+@onready var sfxFootstep: AudioStreamPlayer2D = $Footstep
+@onready var sfxDialogue: AudioStreamPlayer2D = $Camera2D/Dialogue
+@onready var sfxPickup: AudioStreamPlayer2D = $Pickup
+@onready var dialogue: Camera2D = $Camera2D
 
-const SPEED = 150.0
+var SPEED = 150.0
 
 var directionName = "down";
 
@@ -21,6 +25,7 @@ func _physics_process(_delta: float) -> void:
 		velocity = Vector2.ZERO
 
 	if direction != Vector2.ZERO:
+		sfxFootstep.play()
 		if abs(direction.x) > abs(direction.y):
 			if direction.x > 0:
 				directionName = "right";

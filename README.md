@@ -1,7 +1,11 @@
-# interactivite-ludique-tp2
+# Soucou 3.5
 
-Soucou 3.5
+## Contrôles
+WASD - Mouvement
+R - Réinitialiser
 
-WASD
+## Shaders
 
-Tileset: https://cainos.itch.io/pixel-art-top-down-basic
+https://godotshaders.com/shader/cctv-old-security-camera-style-shader/
+https://godotshaders.com/shader/camera-vignette-shader/
+https://godotshaders.com/shader/2d-highlight-effect/
