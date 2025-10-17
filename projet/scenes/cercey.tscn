@@ -149,17 +149,15 @@ position = Vector2(-0.5, 11.125)
 shape = SubResource("RectangleShape2D_ajm1g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(3, 3)
+zoom = Vector2(4, 4)
 script = ExtResource("2_rquol")
 
 [node name="TextBox" type="Sprite2D" parent="Camera2D"]
-visible = false
 position = Vector2(-67.25, 80.5196)
 scale = Vector2(0.53209, 0.697017)
 texture = ExtResource("2_k7xo7")
 
 [node name="Name" type="RichTextLabel" parent="Camera2D"]
-visible = false
 offset_left = -234.0
 offset_top = 22.0
 offset_right = 46.0
@@ -169,7 +167,6 @@ text = "[b]Cercey[/b]"
 tab_size = 1
 
 [node name="Text" type="RichTextLabel" parent="Camera2D"]
-visible = false
 offset_left = -238.0
 offset_top = 69.0
 offset_right = 103.0
@@ -197,12 +194,11 @@ offset_right = 192.0
 offset_bottom = 109.0
 
 [node name="Shaders" type="ColorRect" parent="Camera2D"]
-visible = false
 material = SubResource("ShaderMaterial_wxxgv")
-offset_left = -353.0
-offset_top = -221.0
-offset_right = 361.0
-offset_bottom = 223.0
+offset_left = -802.0
+offset_top = -457.0
+offset_right = 707.0
+offset_bottom = 386.0
 
 [node name="Footstep" type="AudioStreamPlayer2D" parent="."]
 stream = ExtResource("5_hy8lg")
