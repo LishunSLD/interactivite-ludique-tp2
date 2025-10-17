@@ -149,7 +149,7 @@ position = Vector2(-0.5, 11.125)
 shape = SubResource("RectangleShape2D_ajm1g")
 
 [node name="Camera2D" type="Camera2D" parent="."]
-zoom = Vector2(6, 6)
+zoom = Vector2(5, 5)
 script = ExtResource("2_rquol")
 
 [node name="TextBox" type="Sprite2D" parent="Camera2D"]
