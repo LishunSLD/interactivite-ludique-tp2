@@ -10,6 +10,9 @@ offset_right = 40.0
 offset_bottom = 40.0
 script = ExtResource("1_5vpvs")
 
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(1.7, 1.7)
+
 [node name="TextureRect" type="TextureRect" parent="."]
 show_behind_parent = true
 layout_mode = 0
@@ -27,7 +30,5 @@ offset_top = 183.0
 offset_right = 78.0
 offset_bottom = 238.0
 text = "Retour"
-
-[node name="Camera2D" type="Camera2D" parent="."]
 
 [connection signal="pressed" from="Jouer" to="." method="_on_jouer_pressed"]
