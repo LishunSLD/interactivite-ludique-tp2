@@ -13,8 +13,15 @@ script = ExtResource("1_5vpvs")
 [node name="Camera2D" type="Camera2D" parent="."]
 zoom = Vector2(1.7, 1.7)
 
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 0
+offset_left = -1688.0
+offset_top = -1211.0
+offset_right = 3619.0
+offset_bottom = 2210.0
+color = Color(0.129412, 0.0980392, 0.0980392, 1)
+
 [node name="TextureRect" type="TextureRect" parent="."]
-show_behind_parent = true
 layout_mode = 0
 offset_left = -586.0
 offset_top = -366.0

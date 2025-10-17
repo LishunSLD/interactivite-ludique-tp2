@@ -1,4 +1,4 @@
-[gd_scene load_steps=17 format=4 uid="uid://cvltj7a8v5qi"]
+[gd_scene load_steps=18 format=4 uid="uid://cvltj7a8v5qi"]
 
 [ext_resource type="Script" uid="uid://cr01sibtwtq8u" path="res://script/node_2d.gd" id="1_gee14"]
 [ext_resource type="PackedScene" uid="uid://doucbcypiia84" path="res://scenes/cercey.tscn" id="2_0tnpc"]
@@ -21,6 +21,9 @@ shader_parameter/is_horizontal = false
 
 [sub_resource type="CircleShape2D" id="CircleShape2D_hh0fu"]
 radius = 20.0
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_gee14"]
+size = Vector2(637.5, 123)
 
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_fws66"]
 texture = ExtResource("6_kvuet")
@@ -77,7 +80,7 @@ sources/0 = SubResource("TileSetAtlasSource_fws66")
 [sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_4vge2"]
 texture = ExtResource("7_trtic")
 0:0/0 = 0
-0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.18011, -8, 8, -8, 8, 8, 2.08101, 8)
 1:0/0 = 0
 1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:0/0 = 0
@@ -85,9 +88,9 @@ texture = ExtResource("7_trtic")
 3:0/0 = 0
 3:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:0/0 = 0
-4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.47739, -8, -2.47739, 8, -8, 8)
 0:1/0 = 0
-0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.67558, -8, 8, -8, 8, 8, 2.3783, 8)
 1:1/0 = 0
 1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:1/0 = 0
@@ -95,9 +98,9 @@ texture = ExtResource("7_trtic")
 3:1/0 = 0
 3:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:1/0 = 0
-4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -3.07197, -8, -2.57649, 8, -8, 8)
 0:2/0 = 0
-0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.18011, -8, 8, -8, 8, 8, 2.2792, 8)
 1:2/0 = 0
 1:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 2:2/0 = 0
@@ -105,15 +108,15 @@ texture = ExtResource("7_trtic")
 3:2/0 = 0
 3:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 4:2/0 = 0
-4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:2/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.67558, -8, -2.47739, 8, -8, 8)
 0:3/0 = 0
-0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(3.07197, -8, 8, -8, 8, 8, 2.67558, 8)
 4:3/0 = 0
-4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:3/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.87378, -8, -2.47739, 8, -8, 8)
 0:4/0 = 0
-0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(2.47739, -8, 8, -8, 8, 8, 2.67558, 8)
 4:4/0 = 0
-4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+4:4/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, -2.87378, -8, -2.77468, 8, -8, 8)
 0:5/0 = 0
 0:5/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
 1:5/0 = 0
@@ -192,6 +195,20 @@ position = Vector2(-202, 4)
 position = Vector2(66, 105)
 shape = SubResource("CircleShape2D_hh0fu")
 
+[node name="BoxRoom" type="Area2D" parent="."]
+position = Vector2(-202, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="BoxRoom"]
+position = Vector2(228, 419)
+shape = SubResource("RectangleShape2D_gee14")
+
+[node name="Hallway" type="Area2D" parent="."]
+position = Vector2(-202, 4)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Hallway"]
+position = Vector2(146.25, -311.5)
+shape = SubResource("RectangleShape2D_gee14")
+
 [node name="Floormap" type="TileMapLayer" parent="."]
 show_behind_parent = true
 position = Vector2(1, 1)
@@ -217,3 +234,5 @@ metadata/_edit_lock_ = true
 
 [connection signal="body_entered" from="Relic" to="." method="_on_relic_body_entered"]
 [connection signal="body_entered" from="MinouHead" to="." method="_on_minou_head_body_entered"]
+[connection signal="body_entered" from="BoxRoom" to="." method="_on_box_room_body_entered"]
+[connection signal="body_entered" from="Hallway" to="." method="_on_hallway_body_entered"]

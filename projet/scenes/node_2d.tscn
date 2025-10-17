@@ -9,6 +9,7 @@
 script = ExtResource("1_rnjyy")
 
 [node name="Camera2D" type="Camera2D" parent="."]
+offset = Vector2(3.91, 50)
 zoom = Vector2(3, 3)
 
 [node name="Title" type="Control" parent="."]
@@ -22,10 +23,10 @@ show_behind_parent = true
 z_index = -1
 z_as_relative = false
 layout_mode = 0
-offset_left = -453.0
-offset_top = -219.0
-offset_right = 803.0
-offset_bottom = 621.0
+offset_left = -722.0
+offset_top = -532.0
+offset_right = 781.0
+offset_bottom = 538.0
 texture = ExtResource("2_4vge2")
 
 [node name="Jouer" type="Button" parent="Title"]

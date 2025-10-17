@@ -194,6 +194,7 @@ offset_right = 192.0
 offset_bottom = 109.0
 
 [node name="Shaders" type="ColorRect" parent="Camera2D"]
+visible = false
 material = SubResource("ShaderMaterial_wxxgv")
 offset_left = -802.0
 offset_top = -457.0
